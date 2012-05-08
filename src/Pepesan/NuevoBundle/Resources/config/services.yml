@@ -1,0 +1,7 @@
+parameters:
+#    pepesan_nuevo.example.class: Pepesan\NuevoBundle\Example
+
+services:
+#    pepesan_nuevo.example:
+#        class: %pepesan_nuevo.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,11 @@
+PepesanNuevoBundle:
+    resource: "@PepesanNuevoBundle/Resources/config/routing.yml"
+    prefix:   /
+
+PepesanNuevoBundle_clientes:
+        resource: "@PepesanNuevoBundle/Resources/config/routing/clientes.yml"
+        prefix:   /clientes 
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal

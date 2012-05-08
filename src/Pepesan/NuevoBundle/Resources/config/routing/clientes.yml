@@ -1,0 +1,30 @@
+clientes:
+    pattern:  /
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:index" }
+
+clientes_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:show" }
+
+clientes_new:
+    pattern:  /new
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:new" }
+
+clientes_create:
+    pattern:  /create
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:create" }
+    requirements: { _method: post }
+
+clientes_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:edit" }
+
+clientes_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:update" }
+    requirements: { _method: post }
+
+clientes_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "PepesanNuevoBundle:Clientes:delete" }
+    requirements: { _method: post }

@@ -1,0 +1,60 @@
+<?php
+
+namespace Pepesan\NuevoBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Pepesan\NuevoBundle\Entity\Clientes
+ *
+ * @ORM\Table(name="clientes")
+ * @ORM\Entity
+ */
+class Clientes
+{
+    /**
+     * @var integer $clienteid
+     *
+     * @ORM\Column(name="clienteid", type="integer", nullable=false)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="IDENTITY")
+     */
+    private $clienteid;
+
+    /**
+     * @var string $nombre
+     *
+     * @ORM\Column(name="nombre", type="string", length=50, nullable=false)
+     */
+    private $nombre;
+
+    /**
+     * @var string $tlf
+     *
+     * @ORM\Column(name="tlf", type="string", length=20, nullable=false)
+     */
+    private $tlf;
+
+    /**
+     * @var string $web
+     *
+     * @ORM\Column(name="web", type="string", length=255, nullable=false)
+     */
+    private $web;
+
+    /**
+     * @var string $image
+     *
+     * @ORM\Column(name="image", type="string", length=255, nullable=false)
+     */
+    private $image;
+
+    /**
+     * @var string $dir
+     *
+     * @ORM\Column(name="dir", type="string", length=255, nullable=false)
+     */
+    private $dir;
+
+
+}

@@ -1,0 +1,21 @@
+clientes:
+    pattern: /clientes
+    defaults: { _controller: AcmeDemoBundle:Clientes:index }
+clientes_show:
+    pattern: /clientes/{id}/show
+    defaults: { _controller: AcmeDemoBundle:Clientes:show }
+clientes_edit:
+    pattern: /clientes/{id}/edit
+    defaults: { _controller: AcmeDemoBundle:Clientes:edit }
+clientes_delete:
+    pattern: /clientes/{id}/delete
+    defaults: { _controller: AcmeDemoBundle:Clientes:delete }
+clientes_new:
+    pattern: /clientes/new
+    defaults: { _controller: AcmeDemoBundle:Clientes:new }
+clientes_create:
+    pattern: /clientes/create
+    defaults: { _controller: AcmeDemoBundle:Clientes:create }
+clientes_update:
+    pattern: /clientes/update
+    defaults: { _controller: AcmeDemoBundle:Clientes:update }

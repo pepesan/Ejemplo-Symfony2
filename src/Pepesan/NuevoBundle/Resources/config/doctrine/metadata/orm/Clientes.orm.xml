@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="Clientes" table="clientes">
+    <change-tracking-policy>DEFERRED_IMPLICIT</change-tracking-policy>
+    <id name="clienteid" type="integer" column="clienteid">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="nombre" type="string" column="nombre" length="50"/>
+    <field name="tlf" type="string" column="tlf" length="20"/>
+    <field name="web" type="string" column="web" length="255"/>
+    <field name="image" type="string" column="image" length="255"/>
+    <field name="dir" type="string" column="dir" length="255"/>
+    <lifecycle-callbacks/>
+  </entity>
+</doctrine-mapping>
